@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts: Libertinus Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="assets/images/projects/WhatsApp Image 2025-12-15 at 22.16.52_b958ca55.jpg" alt="Logo"
+                    width="40" height="40" class="rounded-circle border border-primary">
+                ROMIZ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                title="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="d-flex align-items-center justify-content-center vh-100 position-relative category-section">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="display-3 fw-bold">Hello, I'm <span class="text-gradient">Romiz</span></h1>
+            <p class="lead mt-3 mb-4">Software Engineer & Problem Solver</p>
+            <p class="text-light-50 mb-5 fs-5">Transforming complex problems into elegant, efficient, and scalable
+                software solutions. <br>I build the digital future, one line of code at a time.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#projects" class="btn btn-primary btn-lg rounded-pill px-4">View Work</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4">Contact Me</a>
+            </div>
+        </div>
+        <!-- Decorative Background Elements -->
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-img-container">
+                        <img src="assets\images\projects\WhatsApp Image 2025-12-15 at 22.16.52_b958ca55.jpg"
+                            alt="Profile" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                    <h2 class="mb-4 display-5 fw-bold">About Romiz</h2>
+                    <p class="lead text-light-50">I am a passionate web developer with a keen eye for detail and a love
+                        for creating seamless digital experiences.</p>
+                    <p class="text-light-50">With a background in computer science and years of hands-on experience, I
+                        specialize in building responsive, accessible, and performant web applications. I love solving
+                        complex problems and turning ideas into reality using modern technologies.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-code text-primary fs-3 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Development</h5>
+                                    <small class="text-muted">Clean & Efficient Code</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-palette text-primary fs-3 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Design</h5>
+                                    <small class="text-muted">Modern & Responsive</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark-alt">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 display-5 fw-bold" data-aos="fade-up">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="fab fa-html5 fs-1 text-orange mb-3"></i>
+                        <h4>HTML5</h4>
+                        <div class="progress mt-3" style="height: 6px;">
+                            <div class="progress-bar bg-orange" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="fab fa-css3-alt fs-1 text-blue mb-3"></i>
+                        <h4>CSS3/Bootstrap</h4>
+                        <div class="progress mt-3" style="height: 6px;">
+                            <div class="progress-bar bg-blue" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="fab fa-js fs-1 text-yellow mb-3"></i>
+                        <h4>JavaScript</h4>
+                        <div class="progress mt-3" style="height: 6px;">
+                            <div class="progress-bar bg-yellow" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-card p-4 rounded-4 text-center">
+                        <i class="fab fa-react fs-1 text-cyan mb-3"></i>
+                        <h4>React</h4>
+                        <div class="progress mt-3" style="height: 6px;">
+                            <div class="progress-bar bg-cyan" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Accordion) -->
+    <section id="experience" class="py-5 bg-dark-alt">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 display-5 fw-bold" data-aos="fade-up">Professional Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion custom-accordion" id="accordionExperience">
+                        <!-- Item 1 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded-4 p-4 fw-bold fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <i class="fas fa-laptop-code me-3 text-primary"></i> Senior Software Engineer @
+                                    TechFlow Solutions
+                                    <span class="ms-auto text-muted fs-6 d-none d-sm-block">2023 - Present</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExperience">
+                                <div class="accordion-body text-light-50 p-4 pt-2">
+                                    <p>Lead developer for cloud-native applications, architecting scalable microservices
+                                        and mentoring a team of junior developers. improved system performance by 40%
+                                        through code optimization.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed rounded-4 p-4 fw-bold fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <i class="fas fa-layer-group me-3 text-primary"></i> Full Stack Developer @ Creative
+                                    Minds Agency
+                                    <span class="ms-auto text-muted fs-6 d-none d-sm-block">2021 - 2023</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExperience">
+                                <div class="accordion-body text-light-50 p-4 pt-2">
+                                    <p>Delivered 50+ web projects for global clients including e-commerce platforms and
+                                        corporate dashboards. Specialized in React and Node.js ecosystems for rapid
+                                        development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="accordion-item bg-transparent border-0 mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed rounded-4 p-4 fw-bold fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <i class="fas fa-terminal me-3 text-primary"></i> Junior Developer @ StartUp Inc
+                                    <span class="ms-auto text-muted fs-6 d-none d-sm-block">2019 - 2021</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExperience">
+                                <div class="accordion-body text-light-50 p-4 pt-2">
+                                    <p>Collaborated on high-traffic web applications, focusing on front-end
+                                        interactivity and bug fixing. Gained deep expertise in HTML5, CSS3, and
+                                        JavaScript fundamentals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 display-5 fw-bold" data-aos="fade-up">Recent Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1: MuscleUp -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card h-100 border-0 rounded-4 overflow-hidden">
+                        <img src="assets\images\projects\Screenshot 2025-12-15 225336.png" class="card-img-top"
+                            alt="MuscleUp Landing Page">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">MuscleUp Landing Page</h5>
+                            <p class="card-text text-muted">A modern fitness and gym landing page designed to attract
+                                and convert visitors.</p>
+                            <a href="https://muscleuplandingpage.ct.ws/?i=1" target="_blank"
+                                class="btn btn-link text-decoration-none p-0 text-primary">View Project <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Restaurant -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card project-card h-100 border-0 rounded-4 overflow-hidden">
+                        <img src="assets\images\projects\pexels-pixabay-262978.jpg" class="card-img-top"
+                            alt="Restaurant Landing Page">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Restaurant Landing Page</h5>
+                            <p class="card-text text-muted">An elegant restaurant showcase with menu highlights and
+                                reservation features.</p>
+                            <a href="https://restaurantlandingpage.free.nf" target="_blank"
+                                class="btn btn-link text-decoration-none p-0 text-primary">View Project <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: App Landing -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card project-card h-100 border-0 rounded-4 overflow-hidden">
+                        <img src="assets\images\projects\Screenshot 2025-12-15 225739.png" class="card-img-top"
+                            alt="App Landing Page">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">App Landing Page</h5>
+                            <p class="card-text text-muted">A sleek promotional page for a mobile application with
+                                feature breakdowns.</p>
+                            <a href="http://applandingpage.free.nf/" target="_blank"
+                                class="btn btn-link text-decoration-none p-0 text-primary">View Project <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Real Estate -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card project-card h-100 border-0 rounded-4 overflow-hidden">
+                        <img src="assets\images\projects\Screenshot 2025-12-15 225812.png" class="card-img-top"
+                            alt="Real Estate Demo">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Real Estate Demo</h5>
+                            <p class="card-text text-muted">A comprehensive property listing platform with search and
+                                gallery features.</p>
+                            <a href="https://realstatedemo.rf.gd/" target="_blank"
+                                class="btn btn-link text-decoration-none p-0 text-primary">View Project <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Carousel) -->
+    <section id="testimonials" class="py-5 bg-dark-alt">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 display-5 fw-bold" data-aos="fade-up">Client Testimonials</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="zoom-in">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <!-- Item 1 -->
+                            <div class="carousel-item active p-4">
+                                <div class="testimonial-card p-4 rounded-4 bg-glass mx-auto">
+                                    <i class="fas fa-quote-left fs-1 text-primary mb-3"></i>
+                                    <p class="lead fst-italic mb-4">"Romiz is a coding wizard! He delivered our project
+                                        ahead of schedule and better than we imagined. His attention to detail is
+                                        unmatched."</p>
+                                    <h5 class="fw-bold">Jane Doe</h5>
+                                    <small class="text-muted">CEO, Innovate Corp</small>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="carousel-item p-4">
+                                <div class="testimonial-card p-4 rounded-4 bg-glass mx-auto">
+                                    <i class="fas fa-quote-left fs-1 text-primary mb-3"></i>
+                                    <p class="lead fst-italic mb-4">"Exceptional problem solver. Romiz tackled our most
+                                        complex backend challenges with ease. Highly recommended."</p>
+                                    <h5 class="fw-bold">John Smith</h5>
+                                    <small class="text-muted">CTO, TechGiants</small>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="carousel-item p-4">
+                                <div class="testimonial-card p-4 rounded-4 bg-glass mx-auto">
+                                    <i class="fas fa-quote-left fs-1 text-primary mb-3"></i>
+                                    <p class="lead fst-italic mb-4">"A true professional who communicates clearly and
+                                        delivers quality code. The new dashboard he built has transformed our workflow."
+                                    </p>
+                                    <h5 class="fw-bold">Sarah Lee</h5>
+                                    <small class="text-muted">Product Manager, DataFlow</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark-alt">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="mb-4 display-5 fw-bold">Get In Touch</h2>
+                    <p class="lead text-light-50 mb-5">Have a project in mind or just want to say hi? Feel free to send
+                        me a message.</p>
+
+                    <form class="text-start p-4 p-md-5 rounded-4 contact-form bg-glass" action="#">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="john@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Your message..."></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5">Send
+                                    Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center border-top border-secondary">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                <img src="assets/images/projects/WhatsApp Image 2025-12-15 at 22.16.52_b958ca55.jpg" alt="Logo"
+                    width="30" height="30" class="rounded-circle">
+                <span class="fw-bold text-white">ROMIZ</span>
+            </div>
+            <p class="mb-0 text-muted">&copy; 2025 Romiz. All rights reserved.</p>
+            <div class="mt-3">
+                <a href="#" class="text-secondary me-3"><i class="fab fa-twitter fs-5"></i></a>
+                <a href="#" class="text-secondary me-3"><i class="fab fa-linkedin fs-5"></i></a>
+                <a href="#" class="text-secondary"><i class="fab fa-github fs-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
