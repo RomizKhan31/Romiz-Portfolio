@@ -43,4 +43,57 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Skills slider
+    const skillsTrack = document.getElementById('skillsTrack');
+    const skillsPrev = document.getElementById('skillsPrev');
+    const skillsNext = document.getElementById('skillsNext');
+    const slides = Array.from(document.querySelectorAll('.skill-slide'));
+    let currentSkillIndex = 0;
+    let skillInterval;
+
+    const updateSkillPosition = () => {
+        const slideWidth = slides[0].offsetWidth + 24; // gap + width
+        const visibleCount = Math.max(1, Math.floor(document.querySelector('.skills-slider-container').offsetWidth / slideWidth));
+        const maxIndex = Math.max(0, slides.length - visibleCount);
+        if (currentSkillIndex > maxIndex) {
+            currentSkillIndex = 0;
+        }
+        skillsTrack.style.transform = `translateX(-${currentSkillIndex * slideWidth}px)`;
+    };
+
+    const nextSkill = () => {
+        const slideWidth = slides[0].offsetWidth + 24;
+        const visibleCount = Math.max(1, Math.floor(document.querySelector('.skills-slider-container').offsetWidth / slideWidth));
+        const maxIndex = Math.max(0, slides.length - visibleCount);
+        currentSkillIndex = currentSkillIndex >= maxIndex ? 0 : currentSkillIndex + 1;
+        skillsTrack.style.transform = `translateX(-${currentSkillIndex * slideWidth}px)`;
+    };
+
+    const prevSkill = () => {
+        const slideWidth = slides[0].offsetWidth + 24;
+        const visibleCount = Math.max(1, Math.floor(document.querySelector('.skills-slider-container').offsetWidth / slideWidth));
+        const maxIndex = Math.max(0, slides.length - visibleCount);
+        currentSkillIndex = currentSkillIndex <= 0 ? maxIndex : currentSkillIndex - 1;
+        skillsTrack.style.transform = `translateX(-${currentSkillIndex * slideWidth}px)`;
+    };
+
+    skillsNext.addEventListener('click', () => {
+        nextSkill();
+        resetSkillInterval();
+    });
+
+    skillsPrev.addEventListener('click', () => {
+        prevSkill();
+        resetSkillInterval();
+    });
+
+    const resetSkillInterval = () => {
+        clearInterval(skillInterval);
+        skillInterval = setInterval(nextSkill, 5000);
+    };
+
+    window.addEventListener('resize', updateSkillPosition);
+    updateSkillPosition();
+    skillInterval = setInterval(nextSkill, 5000);
 });
