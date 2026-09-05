@@ -250,12 +250,25 @@ h6 { font-size: 1rem; }
     transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
     padding: var(--spacing-lg);
     box-shadow: var(--shadow-md);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
+}
+
+.skill-card i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    line-height: 1;
+    transform: translateZ(0);
+}
+
+.skill-card:hover i {
+    transform: translateZ(0) scale(1.1);
 }
 
 .skills-slider-container {
@@ -482,16 +495,356 @@ footer {
 
 /* Responsive specific overrides */
 @media (max-width: 991px) {
-    .navbar-collapse {
-        background: var(--card-bg);
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 15px;
-        border: 1px solid var(--glass-border);
+    .navbar {
+        padding: 0.75rem 0;
     }
 
-    .hero h1 {
-        font-size: 3rem;
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .navbar-toggler {
+        padding: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar-collapse {
+        background: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-top: 1rem;
+        border: 1px solid var(--glass-border);
+        box-shadow: var(--shadow-lg);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 0.75rem 0;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(56, 189, 248, 0.1);
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero Section Mobile */
+    #home {
+        min-height: 100vh;
+        padding: 80px 0 60px;
+    }
+
+    #home h1 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem;
+    }
+
+    #home .lead {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem;
+    }
+
+    #home .fs-5 {
+        font-size: 0.95rem !important;
+    }
+
+    #home .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    #home .d-flex {
+        flex-direction: column;
+        gap: 1rem !important;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    #home .btn {
+        width: 100%;
+    }
+
+    /* Decorative circles mobile */
+    .circle {
+        opacity: 0.2;
+    }
+
+    .circle-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* About Section Mobile */
+    #about .container {
+        padding: 0 1rem;
+    }
+
+    .about-img-container {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-img-container img {
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #about h2 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    #about .lead {
+        font-size: 1.1rem !important;
+        text-align: center;
+    }
+
+    #about .text-light-50 {
+        font-size: 0.95rem !important;
+        text-align: center;
+    }
+
+    #about .about-cta {
+        text-align: center;
+    }
+
+    /* Skills Section Mobile */
+    #skills .container {
+        padding: 0 1rem;
+    }
+
+    #skills h2 {
+        font-size: 2rem !important;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .slider-nav {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-slider-container {
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .skill-slide {
+        min-width: 200px !important;
+        flex: 0 0 200px !important;
+    }
+
+    .skill-card {
+        padding: 1.5rem !important;
+    }
+
+    .skill-card i {
+        font-size: 2rem !important;
+    }
+
+    .skill-card h4 {
+        font-size: 1.1rem !important;
+        margin-top: 0.75rem;
+    }
+
+    .skill-card small {
+        font-size: 0.8rem !important;
+    }
+
+    /* Experience Section Mobile */
+    #experience .container {
+        padding: 0 1rem;
+    }
+
+    #experience h2 {
+        font-size: 2rem !important;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    .experience-card {
+        padding: 1.25rem !important;
+    }
+
+    .experience-badge {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .experience-card h5 {
+        font-size: 1.1rem !important;
+    }
+
+    .experience-card .text-muted {
+        font-size: 0.85rem !important;
+    }
+
+    .experience-card .text-light-50 {
+        font-size: 0.9rem !important;
+    }
+
+    /* Projects Section Mobile */
+    #projects .container {
+        padding: 0 1rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem !important;
+    }
+
+    .project-card .card-img-top {
+        height: 180px !important;
+    }
+
+    .project-card .card-body {
+        padding: 1.25rem !important;
+    }
+
+    .project-card h5 {
+        font-size: 1.1rem !important;
+    }
+
+    .project-card .card-text {
+        font-size: 0.9rem !important;
+    }
+
+    /* Contact Section Mobile */
+    #contact .container {
+        padding: 0 1rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem !important;
+    }
+
+    #contact .lead {
+        font-size: 1.1rem !important;
+    }
+
+    .contact-form {
+        padding: 1.5rem !important;
+    }
+
+    .form-control {
+        padding: 0.75rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    #contact .btn {
+        padding: 0.75rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    /* Footer Mobile */
+    footer {
+        padding: 1.5rem 0 !important;
+    }
+
+    footer .container {
+        padding: 0 1rem;
+    }
+
+    footer img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    footer span {
+        font-size: 0.9rem !important;
+    }
+
+    footer p {
+        font-size: 0.8rem !important;
+    }
+
+    footer i {
+        font-size: 1.2rem !important;
+    }
+
+    /* Section spacing mobile */
+    section {
+        padding: 3rem 0 !important;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra small mobile */
+    #home h1 {
+        font-size: 1.75rem !important;
+    }
+
+    #home .lead {
+        font-size: 1rem !important;
+    }
+
+    #home .fs-5 {
+        font-size: 0.85rem !important;
+    }
+
+    .skill-slide {
+        min-width: 160px !important;
+        flex: 0 0 160px !important;
+    }
+
+    .skill-card {
+        padding: 1rem !important;
+    }
+
+    .skill-card i {
+        font-size: 1.5rem !important;
+    }
+
+    .skill-card h4 {
+        font-size: 0.95rem !important;
+    }
+
+    .project-card .card-img-top {
+        height: 150px !important;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slider-btn i {
+        font-size: 0.9rem;
     }
 }
 
