@@ -71,6 +71,9 @@ const initNavbarScroll = () => {
         }
     };
 
+    // Set initial state on page load
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll, { passive: true });
 };
 
