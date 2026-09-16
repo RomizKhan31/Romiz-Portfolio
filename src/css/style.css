@@ -244,6 +244,51 @@ h6 { font-size: 1rem; }
     background-color: var(--card-bg);
 }
 
+.skill-category {
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-category:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(56, 189, 248, 0.3);
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.5);
+}
+
+.skill-badge-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.skill-badge-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hover-primary:hover {
+    color: var(--primary-color) !important;
+    transition: color 0.3s ease;
+}
+
 .skill-card {
     background: var(--bg-color);
     border: 1px solid var(--glass-border);
