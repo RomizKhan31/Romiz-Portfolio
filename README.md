@@ -1,6 +1,8 @@
-# Romiz Portfolio Website
+# Romiz Khan
 
-A modern, responsive personal portfolio website showcasing software development projects, skills, and professional experience. Built with clean HTML5, CSS3, JavaScript, and Bootstrap 5.
+**Software Engineer | Full Stack Developer | Flutter Developer**
+
+A modern, responsive personal portfolio website showcasing software development projects, technical expertise, and professional experience. Specialized in building scalable web and mobile applications with modern technologies.
 
 ## 🚀 Features
 
@@ -13,20 +15,69 @@ A modern, responsive personal portfolio website showcasing software development 
 - **SEO Optimized**: Proper meta tags and Open Graph support
 - **Performance Optimized**: Efficient CSS and JavaScript with error handling
 
-## �️ Tech Stack
+## 💻 Technical Skills
 
-### Frontend
-- **HTML5**: Semantic markup
-- **CSS3**: Custom styling with CSS variables
-- **JavaScript (ES6+)**: Modern JavaScript with modular functions
-- **Bootstrap 5**: Responsive framework
-- **AOS**: Scroll animations
-- **FontAwesome**: Icon library
-- **Google Fonts**: Libertinus Sans typography
+### Frontend Development
+- **React.js**: Component-based UI development with hooks and state management
+- **Next.js**: Server-side rendering, static site generation, and full-stack React framework
+- **JavaScript (ES6+)**: Modern JavaScript with async/await, promises, and modular architecture
+- **TypeScript**: Type-safe development with interfaces, generics, and advanced typing
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- **HTML5**: Semantic markup and accessibility best practices
+- **CSS3**: Advanced styling with Flexbox, Grid, animations, and responsive design
+- **Elementor (WordPress)**: WordPress page builder for CMS-based websites
 
-### Build Tools
-- No build process required (static site)
-- Direct browser deployment ready
+### Backend Development
+- **Next.js API Routes**: Serverless API endpoints and middleware
+- **Node.js**: Server-side JavaScript runtime with Express.js
+- **RESTful APIs**: Design and implementation of REST APIs
+- **Authentication & Authorization**: JWT, OAuth, and session management
+
+### Database & Storage
+- **MySQL**: Relational database design, optimization, and complex queries
+- **PostgreSQL**: Advanced relational database with JSON support and indexing
+- **Supabase**: Open-source Firebase alternative with real-time database and auth
+- **Firebase**: NoSQL database, real-time sync, and cloud functions
+
+### Mobile Development
+- **Flutter**: Cross-platform mobile app development with Dart
+- **Dart**: Programming language for Flutter applications
+- **State Management**: Provider, Riverpod, and BLoC patterns
+
+### Design & Prototyping
+- **Figma**: UI/UX design, prototyping, and design system creation
+- **Canva**: Graphic design and visual content creation
+
+### Development Tools
+- **Visual Studio Code**: Primary IDE with extensions and custom configurations
+- **IntelliJ IDEA**: Advanced IDE for Java and enterprise development
+- **Android Studio**: Mobile development environment for Flutter and Android
+- **Git**: Version control with branching strategies and collaboration workflows
+- **GitHub**: Code hosting, CI/CD, and project management
+
+## �‍💻 About Me
+
+I am a passionate Software Engineer and Full Stack Developer with expertise in building modern web and mobile applications. With a strong foundation in both frontend and backend technologies, I specialize in creating scalable, performant, and user-centric solutions.
+
+My technical journey spans across multiple domains:
+- **Web Development**: Building responsive and interactive web applications using React, Next.js, and modern CSS frameworks
+- **Mobile Development**: Creating cross-platform mobile apps with Flutter and Dart
+- **Backend Development**: Designing robust APIs and server-side solutions with Node.js and Next.js
+- **Database Management**: Working with both SQL (MySQL, PostgreSQL) and NoSQL (Firebase, Supabase) databases
+- **UI/UX Design**: Crafting intuitive user experiences using Figma and implementing them with pixel-perfect code
+
+I am committed to writing clean, maintainable code and staying updated with the latest industry trends and best practices.
+
+## 🌟 Portfolio Website Features
+
+- **Modern UI/UX Design**: Clean, professional interface with smooth animations
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Smooth Animations**: AOS (Animate On Scroll) library for engaging scroll animations
+- **Skills Slider**: Interactive carousel for showcasing technical skills
+- **Project Gallery**: Grid-based project showcase with hover effects
+- **Contact Form**: Functional contact form with validation
+- **SEO Optimized**: Proper meta tags and Open Graph support
+- **Performance Optimized**: Efficient CSS and JavaScript with error handling
 
 ## 📁 Project Structure
 
@@ -45,9 +96,9 @@ Romiz-Portfolio/
 └── README.md             # Project documentation
 ```
 
-## 🎨 Design Features
+## 🎨 Design System
 
-### Color Scheme
+### Color Palette
 - **Primary**: #38bdf8 (Sky Blue)
 - **Secondary**: #818cf8 (Indigo)
 - **Accent**: #f472b6 (Pink)
