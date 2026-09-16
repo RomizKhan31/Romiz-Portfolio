@@ -289,6 +289,49 @@ h6 { font-size: 1rem; }
     transition: color 0.3s ease;
 }
 
+.tech-badge-sm {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(56, 189, 248, 0.15);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.experience-icon-wrapper {
+    flex-shrink: 0;
+}
+
+.experience-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 16px;
+    font-size: 1.75rem;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover .experience-icon {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+}
+
+@media (max-width: 768px) {
+    .experience-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+        border-radius: 12px;
+    }
+}
+
 .skill-card {
     background: var(--bg-color);
     border: 1px solid var(--glass-border);
